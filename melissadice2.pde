@@ -1,6 +1,6 @@
 //https://openprocessing.org/sketch/1108299
 //https://openprocessing.org/sketch/1107310
-
+//used set dice face total
 int diceTotal;
 int diceTotal2;
 int diceTotal3;
@@ -14,7 +14,7 @@ int chance;
 //used set dice size
 int diceSize = 117;
 //int r = int(random(1,7));
-
+//used set image
 PImage img;
 
 void setup() { 
