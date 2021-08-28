@@ -35,14 +35,14 @@ textSize (40);
  
  
 void draw(){
- //not entirely sure how works, but cool   
+ //Sets number of dice based on dice(int numDice, int numSides) 
   dice(5,2);
 }
 void mousePressed() {
   loop();
 }
 void dice(int numDice, int numSides){
-//re-sets automatic value for sums
+//sets automatic value for sums
   diceTotal = 0;
   diceTotal2 =0;
   diceTotal3=0;
@@ -53,7 +53,7 @@ void dice(int numDice, int numSides){
 
 
 background(255);
-//allows for dice repeat (I think)
+//allows for dice repeat 
  for (int i = 1; i<numDice+1; i++){
   
   fill(0);
@@ -110,6 +110,7 @@ rect(i*150+15, height/2+20, diceSize, diceSize, diceSize/5);
 //dots
   fill(200);
   noStroke();
+ //Randomizes sides
   int side = int(random(1, 7));
   chance += side;
   if (side == 1 || side == 3 || side == 5){
